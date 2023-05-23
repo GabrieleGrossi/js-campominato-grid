@@ -1,10 +1,7 @@
 function cellaCliccata(numero) {
     const cella = document.getElementById('cella-' + numero);
-    cella.addEventListener('click', function(){
         cella.classList.toggle('cliccata');
-        console.log('Hai cliccato sulla cella numero ' + numero);
-    });
-    
+        console.log('Hai cliccato sulla cella numero ' + numero);   
 }
 
 // Genera la griglia di gioco

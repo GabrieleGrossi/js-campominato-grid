@@ -37,10 +37,11 @@ button{
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid black;
-    display: inline-block;
+    display: flex;
     text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
+    cursor: default;
+    justify-content: center;
+    align-items: center;
 }
 
 .cliccata{

@@ -20,7 +20,7 @@ main{
 header img{
     margin: 20px;
 }
-#griglia{
+.griglia{
     height: 650px;
     width: 650px;
     margin: 0 auto;

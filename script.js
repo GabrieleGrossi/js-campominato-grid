@@ -1,3 +1,5 @@
+/*
+
 function cellaCliccata(numero) {
     const cella = document.getElementById('cella-' + numero);
         cella.classList.toggle('cliccata');
@@ -18,3 +20,29 @@ for (let i = 1; i <= 100; i++) {
 function refresh(){
     location.reload();
 }
+*/
+
+
+const playButton = document.querySelector('button');
+
+const gridElement = document.querySelector('div.griglia');
+
+playButton.addEventListener(('click'), function(){
+    gridElement.innerHTML = "";
+
+    for (let index = 0; index < 100; index++) {
+        const newCell = document.createElement('div');
+        newCell.classList.add('cella');
+        newCell.innerHTML = `
+            <p>
+                ${index + 1}
+            </p>`;
+
+        newCell.addEventListener('click', function(){
+            console.log(index + 1);
+            newCell.classList.toggle('cliccata');
+        });
+
+        gridElement.appendChild(newCell);
+    }
+});
